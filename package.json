@@ -11,7 +11,7 @@
   },
   "bugs": "https://github.com/noru/my-react-boilerplate/issues",
   "scripts": {
-    "clean": "rimraf build",
+    "clean": "rimraf docs",
     "dev": "USE_MOCK=true node ./src/devServer.js",
     "dev:live": "USE_MOCK=false node ./src/devServer.js",
     "prod": "NODE_ENV=production node ./src/devServer.js",

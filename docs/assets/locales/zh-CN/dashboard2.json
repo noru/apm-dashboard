@@ -1,0 +1,123 @@
+{
+  "status": "状态",
+  "sector": "院区",
+  "dept": "科室",
+  "asset_name": "设备名称",
+  "processor": "处理人",
+  "here_is_config": "配置项在这里",
+  "exit_fullscreen": "退出全屏",
+  "enter_fullscreen": "进入全屏",
+  "hierarchy_config": "配置层级",
+  "choose_orgs": "选择层级",
+  "layout_config": "更改布局",
+  "interval_config": "刷新间隔",
+  "change_background_image": "更换背景",
+  "total_assets": "设备总数",
+  "personnel_performance": "人员绩效",
+  "last_30days": "过去30天",
+  "maintenance_plan": "养计检计划",
+  "life_support_assets_perfectness_ratio": "生命支持设备可用率",
+  "in_fixing": "维修中",
+  "process_time": "更新时间",
+  "since_open": "报修天数",
+  "inspection": "巡检",
+  "counting": "计量",
+  "maintenance": "保养",
+  "operation_rate": "开机率",
+  "request_interval": "请求间隔",
+  "page_interval": "分页间隔",
+  "period_selection": "时间范围",
+  "1_month": "1个月",
+  "3_month": "3个月",
+  "6_month": "半年",
+  "12_month": "一年",
+  "network_error": "网络故障",
+  "interval_not_in_range": "{{name}}超出允许范围",
+  "above_x": "大于{{num}}",
+  "under_x": "大于{{num}}",
+  "in_range_x_y": "{{num1}}到{{num2}}之间",
+  "parameters": "参数类别",
+  "incident_count": "报修次数",
+  "incident_count_unit": "次",
+  "assets_overview": "设备概况",
+  "all_assets": "全部设备",
+  "assets_total_count": "设备总数",
+  "available_assets_count": "可用设备",
+  "halt_assets_count": "停机设备",
+  "dafang_assets": "大放设备",
+  "asset_unit": "台",
+  "dept_top_5": "科室设备TOP 5",
+  "asset_type_top_5": "设备类型TOP 5",
+  "event_unit": "单",
+  "event_overview": "事件概览",
+  "event_to_handle": "待处理",
+  "in_inspection": "巡检",
+  "in_pm": "保养中",
+  "in_metering": "计量中",
+  "warrant_due": "保修到期",
+  "work_order": "维修工单",
+  "pmi_order": "养计检工单",
+  "order_type": "工单类型",
+  "reporter": "报修人",
+  "planned_start_time": "计划开始时间",
+  "planned_end_time": "计划完成时间",
+  "pmi_statistics": "养计检统计",
+  "maintenance_order": "保养工单",
+  "metering_order": "计量工单",
+  "inspection_order": "巡检工单",
+  "planned_orders_count": "计划工单",
+  "closed_on_time_orders_count": "按时关单量",
+  "closed_orders_count": "关单量",
+  "pmi_statistics_legend_unit": "单/月",
+  "crutial_assets_open_rate": "关键设备开机率",
+  "personnel_name": "姓名",
+  "dept_average": "科室平均",
+  "repire_statistics": "维修统计",
+  "accepted_order_count": "接单数",
+  "finished_order_count": "完工数",
+  "service_rate": "满意度",
+  "total_work_hour": "总工时",
+  "malfunction_type": "故障类型",
+  "response_time": "响应时间",
+  "choose_component": "选择组件",
+  "config": {
+    "groupBy": {
+      "title": "统计周期",
+      "values": {
+        "q": "按季度",
+        "m": "按月份"
+      }
+    },
+    "month": {
+      "title": "时间范围",
+      "values": {
+        "1": "1个月",
+        "3": "3个月",
+        "6": "半年",
+        "12": "一年"
+      }
+    },
+    "pastNDays": {
+      "title": "向前统计时间",
+      "unit": "天"
+    },
+    "untilNDays": {
+      "title": "向后统计时间",
+      "unit": "天"
+    },
+    "showWarning": {
+      "title": "超期提醒期限",
+      "unit": "天"
+    },
+    "showAlert": {
+      "title": "超期警告期限",
+      "unit": "天"
+    }
+  },
+
+  "error": {
+    "remove_last": "每列至少保留一个组件",
+    "at_most_4": "每列最多只能放下四个组件, 不能再多了"
+  }
+
+}
