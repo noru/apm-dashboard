@@ -1,0 +1,74 @@
+@import '../../../css/variables';
+
+.dashboard1 {
+  height: 100%;
+  width: 100%;
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  color: $textColor;
+  overflow: hidden;
+  background: linear-gradient(135deg, #202A38, #303643);
+
+  .middle-col {
+    min-width: 24em;
+  }
+  .app-chart-container {
+    height: 100%;
+    padding-bottom: 1.5em;
+    .maintenance-chart-container {
+      height: 100%;
+      .maintenance-status {
+        flex: 1.5;
+      }
+    }
+  }
+
+  .level {
+    margin-bottom: .8em;
+  }
+
+  .chart-title {
+    font-size: 1.2em;
+    white-space: nowrap;
+  }
+
+  .chart-title.config:hover {
+    cursor: pointer;
+    &::after {
+      content: ' 🔧'
+    }
+  }
+
+  .bigger-text {
+    font-size: 1.2em;
+  }
+
+  .normal-text {
+    font-size: 1em;
+  }
+
+  .small-text {
+    font-size: .8em;
+  }
+
+  .major-number {
+    font-size: 2.3em;
+  }
+
+  .normal-number {
+    font-size: 1.7em;
+  }
+  .color-green {
+    color: $green
+  }
+  .color-turquoise {
+    color: $turquoise
+  }
+  .color-purple {
+    color: $purple
+  }
+  .color-yellow {
+    color: $yellow;
+  }
+}

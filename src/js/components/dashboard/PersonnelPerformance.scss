@@ -1,0 +1,46 @@
+@import '../../../css/variables';
+.personnel-performance {
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  .legend {
+    text-align: right;
+    margin: .5rem 52% .5rem 0;
+    min-width: 7em;
+    white-space: nowrap;
+  }
+  .line-item {
+    margin-bottom: .4rem;
+    .progress {
+      max-width: 50%;
+      height: .5rem;
+      margin-left: .5rem;
+      margin-bottom: .3rem;
+      display: inline-block;
+      &.percentage {
+        background: #595B5C;
+      }
+      &.percentage::-webkit-progress-value {
+        background-color: $green;
+      }
+      &.percentage::-webkit-progress-bar {
+        background-color: #595B5C;
+      }
+      &.percentage::-moz-progress-bar {
+          background: $green;
+      }
+      &.tickets {
+        background: $turquoise;
+      }
+      &.tickets::-webkit-progress-value {
+        background-color: $purple;
+      }
+      &.tickets::-moz-progress-bar {
+        background: $purple;
+      }
+      &.tickets::-webkit-progress-bar {
+        background-color: $turquoise;
+      }
+    }
+  }
+}

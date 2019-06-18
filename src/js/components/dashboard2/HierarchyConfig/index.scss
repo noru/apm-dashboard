@@ -1,0 +1,33 @@
+@import '../../../../css/variables.scss';
+
+.hierarchy-config-modal {
+
+  color: white;
+  top: 10%;
+  font-family: inherit;
+
+  .ant-modal-body {
+    font-size: 1rem;
+  }
+
+  .ant-modal-content {
+    background-color: $modalBgColor;
+    padding: 0 3em;
+  }
+
+  .config-modal-content {
+    width: 100%;
+
+    h2 {
+      color: white;
+      text-align: center;
+      font-size: 1.3em;
+      margin-bottom: 1em;
+    }
+  }
+
+  .ant-modal-footer {
+    border-top: none;
+  }
+
+}

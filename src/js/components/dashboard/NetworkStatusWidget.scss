@@ -1,0 +1,17 @@
+#network-status-widget {
+
+  display: inline-block;
+
+  i {
+    font-size: 1.2rem;
+  }
+
+  &.offline {
+    color: red;
+  }
+
+  &.online {
+    visibility: hidden;
+  }
+
+}

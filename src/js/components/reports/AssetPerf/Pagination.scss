@@ -1,0 +1,22 @@
+.pagination-slider {
+
+  padding-right: 1em;
+
+  &.level {
+    margin-bottom: 0;
+  }
+
+  .ant-slider {
+    width: 12em;
+    display: inline-block;
+    .ant-slider-rail {
+      background: #ccc;
+    }
+  }
+
+  .pagination-slider-desc {
+    padding-left: .6em;
+    font-size: 12px;
+  }
+
+}

@@ -1,0 +1,23 @@
+.demo-row {
+
+  border-top: 1px solid #666666;
+  display: flex;
+  justify-content: space-around;
+
+  .separator {
+    color: #666666;
+    font-size: 2em;
+  }
+  .separator:last-of-type {
+    display: none;
+  }
+
+  .row-item {
+    p {
+      font-size: .8rem;
+    }
+    p:first-of-type {
+      font-size: 1.5rem;
+    }
+  }
+}

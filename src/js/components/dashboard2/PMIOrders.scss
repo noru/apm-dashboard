@@ -1,0 +1,75 @@
+@import '../../containers/dashboard2/Dashboard.scss';
+
+.pmi-orders {
+
+  .table-container {
+    margin-top: .5em;
+
+    table {
+      font-size: .77em;
+      th {
+        color: $titleColor;
+        font-weight: normal;
+        padding-bottom: .3em;
+
+        span {
+          border-bottom: 1px solid $separatorColor;
+          padding-bottom: .2em;
+        }
+
+        &:nth-of-type(2) {
+          width: 24%;
+        }
+        &:nth-of-type(3) {
+          width: 20%;
+        }
+        &:nth-of-type(1),
+        &:nth-of-type(4),
+        &:nth-of-type(6),
+        {
+          width: 10%;
+        }
+        &:nth-of-type(5)
+        {
+          width: 15%;
+        }
+
+      }
+
+      tbody tr {
+        border-bottom: 1px solid $separatorColor;
+        &.to-close > td:not(.order-type){
+          color: rgb(255, 109, 109);
+        }
+        &.to-pick > td:last-child {
+          color: rgb(255, 192, 0);
+        }
+        &.closed > td:last-child {
+          color: rgb(146, 208, 80);
+        }
+
+        td {
+          padding-top: .4em;
+          padding-bottom: .1em;
+          white-space: nowrap;
+          overflow-x: hidden;
+          text-overflow: ellipsis;
+
+          > * {
+            display: inline-block;
+            max-width: 1px;
+          }
+        }
+
+        .asset-name {
+          max-width: 11em;
+          position: relative;
+          top: 1px;
+        }
+
+      }
+
+    }
+  }
+
+}

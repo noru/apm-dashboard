@@ -1,0 +1,54 @@
+@import '../../../css/variables';
+
+.maintenance-plan {
+  margin-top: 2.5%;
+  height: 37.5%;
+  .rbc-month-view,
+  .rbc-month-row,
+  .rbc-day-bg + .rbc-day-bg
+   {
+    border-color: $borderColor !important;
+  }
+  .rbc-calendar {
+    a {
+      text-decoration: none;
+      pointer-events: none;
+    }
+    .rbc-today {
+      background-color: lighten($cardColor, 3%);
+    }
+    .rbc-date-cell {
+      text-align: left;
+      padding-left: 5px;
+    }
+  }
+  .rbc-month-header {
+    display: none;
+  }
+
+  .rbc-event {
+    cursor: none;
+    padding: 0;
+    background-color: transparent !important;
+    color: inherit;
+  }
+  .rbc-off-range {
+    color: #555;
+  }
+  .plan-day-event {
+    div {
+      display: inline-block;
+      text-align: center;
+      border-radius: 861112px;
+      height: 1.2rem;
+      width: 1.2rem;
+      line-height: 1.3rem;
+      color: white;
+      font-size: .7rem;
+      margin-right: 3px;
+    }
+  }
+  .plan-overview {
+    padding-top: 2.5em;
+  }
+}

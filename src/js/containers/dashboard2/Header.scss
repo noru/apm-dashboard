@@ -1,0 +1,84 @@
+@import '../../../css/variables.scss';
+
+.dashboard-header {
+  height: 3rem;
+  padding: 3rem 0;
+
+  a {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .level-item.centered {
+    position: relative;
+  }
+
+  .hospital-name {
+    width: 38vw;
+    padding: 0 1em;
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  .hospital-name-bg {
+    position: relative;
+    background: linear-gradient(0deg, rgba(255,255,255,0.12), rgba(0,0,0,0));
+    width: 38vw;
+    height: 5em;
+    transform: perspective(250px) rotateX(-40deg);
+
+    + div {
+      position: absolute;
+      text-align: center;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+  .hospital-name-bg:before, .hospital-name-bg:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+
+  }
+  .hospital-name-bg:before {
+    top: -1px;
+    width: 1px;
+    background-image: linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+  }
+  .hospital-name-bg:after {
+    right: -1px;
+    height: 1px;
+    background-image: linear-gradient(-90deg, transparent, rgba(255, 255, 255, 0.3));
+  }
+
+  &.level {
+    margin-bottom: 0 !important;
+  }
+
+}
+
+:global {
+  .header-menu {
+    background: $modalBgColor;
+
+    .fa {
+      font-size: 1em;
+      line-height: 2em;
+      margin-right: .4em;
+    }
+    .ant-dropdown-menu-item {
+      font-size: .8em;
+    }
+  }
+  .popover-actions {
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: $primary;
+  }
+
+}

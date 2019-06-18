@@ -1,0 +1,61 @@
+@import '../../../css/variables';
+
+
+$titleColor: rgb(93, 180, 229);
+$textColor: white;
+$separatorColor: #363636;
+
+.dashboard2 {
+  height: 100%;
+  width: 100%;
+  min-width: 770px;
+  padding: 0 2em;
+  color: $textColor;
+  overflow-y: hidden;
+  background: url(~assets/img/dashboard2-bg.png);
+  background-size: cover;
+  background-color: #1C1E22;
+
+  .column-1 {
+    flex-grow: 1.4;
+  }
+
+  h1 {
+    font-size: 1em;
+    color: $textColor;
+    top: -5px;
+    &:after {
+      bottom: -5px;
+      background-image: linear-gradient(90deg, $titleColor, transparent);
+    }
+  }
+
+  h2 {
+    font-size: .9em;
+    color: darken($titleColor, 5%);
+    top: -3px;
+    &:after {
+      bottom: -3px;
+      background-image: linear-gradient(90deg, darken($titleColor, 25%), transparent);
+    }
+  }
+
+  h3 {
+    font-size: .9em;
+    color: darken($titleColor, 5%);
+  }
+
+  h1, h2 {
+    position: relative;
+    margin-bottom: .4em !important;
+
+    &:after {
+      content: '';
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+}

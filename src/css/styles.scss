@@ -1,0 +1,33 @@
+
+select.material-input,
+.material-input {
+
+  font-size: 1rem;
+  padding: .4rem 0;
+  font-family: inherit;
+
+  &.dark {
+    color: white;
+    caret-color: white;
+    &::focus {
+      border-bottom-color: white;
+    }
+  }
+
+  &::focus {
+    border-bottom-color: black;
+  }
+
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+  outline: none;
+
+}
+
+select.material-input:after {
+  content: '^',
+}

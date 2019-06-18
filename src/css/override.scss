@@ -1,0 +1,29 @@
+@import './variables';
+
+#app {
+
+  .ant-slider {
+
+    .ant-slider-track {
+      background-color: $primary;
+    }
+
+    .ant-slider-handle {
+      border-color: $primary;
+    }
+
+  }
+
+  .ant-radio-button-wrapper-checked {
+    color: $primary;
+    border-color: $primary;
+  }
+
+  .ant-menu-vertical .ant-menu-item,
+  .ant-menu-inline .ant-menu-item,
+  .ant-menu-vertical .ant-menu-submenu-title,
+  .ant-menu-inline .ant-menu-submenu-title {
+    font-size: 1em;
+  }
+
+}

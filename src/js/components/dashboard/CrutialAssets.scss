@@ -1,0 +1,64 @@
+@import '../../../css/variables';
+
+.crutial-assets {
+  height: 100%;
+
+  .columns.header {
+    margin: .2em auto;
+  }
+  .line-item {
+    .asset-name {
+      text-align: center;
+      font-size: .8em;
+      max-width: 8em;
+    }
+    .column {
+      padding: .2rem;
+    }
+    .column:not(:first-of-type) {
+      padding-top: 1.5rem;
+      padding-right: 1.3rem;
+    }
+    .pie-chart {
+      width: 2rem;
+      height: 2rem;
+      display: inline-block;
+      position: absolute;
+      margin-top: -.25rem;
+      margin-left: .4rem;
+    }
+  }
+  .saperator {
+    height: 2px;
+    background-color: #232936;
+    border-bottom: 1px solid #4D5963;
+    margin-bottom: .75rem;
+  }
+  .life-support-assets {
+    max-height: 25.5%;
+    min-height: 25.5%;
+    height: 25.5%;
+    .bar {
+      height: 100%;
+      min-height: 7em;
+      display: inline-block;
+      padding: 1.5em 0 0;
+      .bigger-text {
+        color: $turquoise;
+        margin-top: .5rem;
+      }
+      .bar-container {
+        height: 50%;
+        max-width: 1.5rem;
+        margin: .5rem auto;
+        background-color: $turquoise;
+      }
+      .bar-value-rest {
+        background-color: #595B5C;
+        height: 100%;
+        min-width: 1.5rem;
+        transition: max-height .7s ease-in;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../containers/dashboard2/Dashboard.scss';
+
+.personnel-performance {
+
+  .chart {
+    display: flex;
+    align-items: center;
+  }
+
+  .chart > * {
+    display: inline-block;
+  }
+
+  .pp-table {
+
+    width: 40%;
+    font-size: .8em;
+
+    .header {
+      border-bottom: 1px solid $separatorColor;
+
+      &.level {
+        margin-bottom: .3em;
+      }
+    }
+
+    .pp-table-label {
+      color: $titleColor;
+      &:not(:last-of-type) {
+        margin-right: 1em;
+      }
+    }
+
+    .pp-body {
+
+      .pp-tr.level {
+        margin-bottom: .2em;
+      }
+      .level-left {
+        width: 20%;
+        border-bottom: 1px solid $separatorColor;
+        justify-content: space-between;
+      }
+
+      .pp-body-average {
+        border-left: 1px dashed $separatorColor;
+        min-width: 70%;
+        max-width: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .radar-chart {
+    margin-left: 1em;
+  }
+
+}

@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+*.iml
+node_modules
+build
+dist
+*.log*
+.awcache
+.nyc_output
+coverage
+bower_components
+src/legacy/polymer/dist
+flow-typed
+src/assets/react

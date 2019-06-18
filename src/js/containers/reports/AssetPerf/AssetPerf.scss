@@ -1,0 +1,115 @@
+@import '../../../../css/variables.scss';
+
+
+.asset-perf-classic {
+  padding: 1em;
+
+  .filter-bar {
+    .nav-left {
+      .nav-item:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .chart-header {
+    padding-left: .2em;
+    margin-top: .5em;
+    margin-bottom: 0;
+
+    .breadcrumb {
+      margin-bottom: 0;
+      a {
+        font-size: 1.2rem;
+      }
+    }
+
+    .chart-controls {
+      min-width: 50%;
+    }
+  }
+
+  .bar-chart-wrapper {
+    background: white;
+  }
+
+  .table-wrapper {
+    margin-top: 1.5em;
+    font-size: .9em;
+    padding: 0 3em 1em;
+    background: white;
+
+    .asset-perf-table {
+      border: none;
+    }
+
+    .name-th {
+      text-align: left;
+    }
+
+    .number-th {
+      text-align: right;
+    }
+
+    .number-col {
+      text-align: right;
+      color: $primary;
+      .negative {
+        color: red;
+      }
+      .positive {
+        color: red;
+      }
+    }
+
+    .table-footer {
+      font-weight: bold;
+    }
+
+    .rt-tfoot {
+      box-shadow: none;
+      border-top: solid 1px #888;
+    }
+
+    .rt-thead.-header {
+      padding: .5em 0 .2em;
+      box-shadow: none;
+      border-bottom: solid 1px #888;
+      color: $textColor;
+    }
+
+    .rt-th {
+      border: none;
+      padding-right: .4em;
+      .rt-resizable-header-content {
+        padding-right: .5em;
+      }
+      &.-cursor-pointer:not(.-sort-asc):not(.-sort-desc):hover::after {
+        position: absolute;
+        right: 0;
+        top: .65em;
+        content: '↕';
+      }
+    }
+
+    .rt-th.-sort-asc,
+    .rt-th.-sort-desc {
+      box-shadow: none;
+    }
+
+    .-sort-desc::after,
+    .-sort-asc::after {
+      position: absolute;
+      right: 0;
+      top: .65em;
+    }
+    .-sort-asc::after {
+      content: '↑';
+    }
+    .-sort-desc::after {
+      content: '↓';
+    }
+
+  }
+
+}

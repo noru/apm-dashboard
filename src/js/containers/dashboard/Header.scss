@@ -1,0 +1,31 @@
+@import '../../../css/variables';
+
+.app-header {
+  height: 3rem;
+
+  a {
+    color: $textColor;
+  }
+  &.level {
+    margin-bottom: 0 !important;
+  }
+
+  .toggle-fullscreen {
+
+    line-height: 1em;
+    margin-left: .5em;
+    margin-top: .2em;
+    filter: brightness(.5);
+    cursor: pointer;
+
+    &:hover {
+      filter: none;
+    }
+
+    .fa {
+      font-size: 1em;
+    }
+
+  }
+
+}

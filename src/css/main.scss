@@ -1,0 +1,69 @@
+@import './variables';
+@import './override';
+@import './styles.scss';
+
+@import '../../node_modules/bulma/sass/utilities/_all';
+@import '../../node_modules/bulma/sass/base/_all';
+@import '../../node_modules/bulma/sass/components/_all';
+@import '../../node_modules/bulma/sass/grid/_all';
+@import '../../node_modules/bulma/sass/layout/_all';
+@import '../../node_modules/bulma/sass/elements/_all';
+@import '../../node_modules/font-awesome/css/font-awesome.min.css';
+
+@font-face {
+  font-family: 'GE Inspira Sans';
+  src: url('~assets/fonts/ge_inspira.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GE CHS';
+  src: url('~assets/fonts/hanyixiyuanjian.ttf') format('truetype');
+}
+
+html {
+  font-size: $default-font-size;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  color: $default-font-color;
+  background-color: #ececec;
+  font-family: "GE CHS", "GE Inspira Sans", Roboto, "Helvetica Neue", sans-serif !important;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.is-fullheight {
+  height: 100%;
+}
+.placeholder {
+  visibility: hidden;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+i.loading-spinner {
+  -webkit-animation: spinAround 500ms infinite linear;
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid $primary;
+  border-radius: 861112px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  width: 1em;
+  left: calc(50% - (1em / 2));
+  top: calc(50% - (1em / 2));
+}
+
+button {
+  @extend .button;
+}

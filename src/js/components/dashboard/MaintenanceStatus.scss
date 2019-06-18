@@ -1,0 +1,74 @@
+@import '../../../css/variables';
+
+$indicatorColor: $yellow;
+
+.maintenance-status {
+  height: 60%;
+  overflow: hidden;
+
+  .col-status-overview {
+    padding: 0;
+  }
+  .status-overview {
+    padding-top: 8rem;
+  }
+
+  .scroll-bar {
+    background-color: $bgColor;
+
+    .graduation {
+      background-color: $turquoise;
+    }
+
+  }
+
+  table {
+    border-collapse: collapse;
+    th:nth-of-type(3),
+    th:nth-of-type(4),
+    th:first-of-type,
+    th:last-of-type {
+      width: 1%;
+    }
+    .asset-name {
+      max-width: 10em;
+    }
+    th, td {
+      border: 1px solid $borderColor;
+      padding: .63rem .45rem .43rem;
+      color: inherit;
+    }
+
+    td:last-of-type {
+      text-align: right;
+    }
+
+    tr {
+      white-space:nowrap;
+    }
+
+  }
+  .status-indicator {
+    display: inline-block;
+    margin-right: .2rem;
+
+    div {
+      display: inline-block;
+      margin-right: 2px;
+      width: .55rem;
+      height: .55rem;
+      border-radius: 861112px;
+      border: 1px solid $indicatorColor;
+      background-color: $indicatorColor;
+    }
+
+    div.current {
+      background-color: transparent;
+    }
+
+    div.current ~ div {
+      background-color: $textColor;
+      border-color: $textColor;
+    }
+  }
+}

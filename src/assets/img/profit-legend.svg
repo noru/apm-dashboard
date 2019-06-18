@@ -1,0 +1,9 @@
+<svg width="321" height="175" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <rect y="0" stroke="#000" rx="50" id="svg_7" height="175" width="160.999998" x="160.000003" stroke-opacity="null" stroke-width="0" fill="#e05455"/>
+  <rect stroke="#000" rx="50" id="svg_13" height="175" width="160.999998" y="0" x="0" stroke-opacity="null" stroke-width="0" fill="#7ba662"/>
+  <path id="svg_14" d="m104.9725,175.000001l0,-175.000001l112.999997,175.000001l-112.999997,0z" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#7ba662"/>
+  <path transform="rotate(180 161.47250366210938,87.50000000000001) " id="svg_15" d="m104.9725,175.000001l0,-175.000001l112.999997,175.000001l-112.999997,0z" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#e05455"/>
+ </g>
+</svg>

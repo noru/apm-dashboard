@@ -1,0 +1,10 @@
+(() => {
+  require('es6-object-assign').polyfill()
+  require('string.prototype.startswith')
+  require('array.prototype.fill')
+  require('array.prototype.findindex').shim()
+  require('raf/polyfill')
+  require('core-js/es6/map')
+  require('core-js/es6/set')
+  require('core-js/es6/promise')
+})()

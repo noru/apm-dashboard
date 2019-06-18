@@ -1,0 +1,47 @@
+.device {
+  text-align: center;
+  max-width: 17vw;
+  min-width: 17vw;
+  padding: 2vh 3vw;
+  margin-right: 2em;
+  font-size: 2rem;
+  cursor: pointer;
+
+  .demo-row .row-item p {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    background: rgba(0,0,0,.3)
+  }
+  .device-id {
+    padding: 1em 0;
+  }
+
+  img {
+    width: auto;
+    height: 180px;
+  }
+
+  .fa {
+    margin-right: 8px;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .device {
+    padding: 1vh 1vw;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1600px) {
+  .device {
+    margin-right: 1em;
+    img {
+      height: 90px;
+    }
+    .demo-row .row-item p {
+      font-size: .8rem;
+    }
+  }
+}

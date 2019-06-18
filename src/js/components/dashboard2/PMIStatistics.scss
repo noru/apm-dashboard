@@ -1,0 +1,70 @@
+@import '../../containers/dashboard2/Dashboard.scss';
+
+.mmi-statistics {
+
+  > .columns {
+    margin: 0;
+  }
+
+  .chart-container {
+    text-align: center;
+  }
+
+  .donut-chart {
+    display: inline-block;
+    width: 43%;
+    margin-top: .4em;
+    margin-right: .5em;
+    position: relative;
+
+    .centered {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: .7em;
+
+      p {
+        line-height: .95em;
+      }
+    }
+
+  }
+
+  .legend {
+    font-size: .8em;
+    padding-top: .8em;
+
+    .legend-1::before,
+    .legend-2::before,
+    .legend-3::before
+     {
+      content: '';
+      display: inline-block;
+      width: 1.5em;
+      height: .8em;
+      margin-left: 1em;
+      margin-right: .3em;
+      border-radius: .2em;
+      border: 1px solid $titleColor;
+    }
+
+    .legend-1::before {
+      background: rgba($titleColor, .7);
+    }
+
+    .legend-2::before {
+      border-color: #92d050;
+      background-color: $titleColor;
+      background-image: linear-gradient(90deg, transparent 50%, rgba(0, 0, 0, .5) 50%);
+      background-size: 2px 2px;
+    }
+
+    .legend-3::before {
+      background-color: transparent;
+      background-size: 2px 2px;
+    }
+
+  }
+
+}

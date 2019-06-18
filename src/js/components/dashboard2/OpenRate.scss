@@ -1,0 +1,15 @@
+
+.open-rate {
+
+  position: relative;
+  .open-rate-chart {
+
+    position: absolute;
+    left: 0;
+
+    > * {
+      display: inline-block;
+    }
+  }
+
+}

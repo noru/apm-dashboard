@@ -1,0 +1,20 @@
+@import '../../containers/dashboard2/Dashboard.scss';
+
+.asset-quantity-2 {
+
+  .columns {
+    padding-left: .8em;
+    padding-top: .8em;
+
+    h2, h3 {
+      font-size: .85em;
+    }
+  }
+  .count {
+    font-size: 1em;
+    padding-bottom: .1em;
+    max-width: 3.5em;
+    text-align: center;
+    border-bottom: 1px solid $separatorColor;
+  }
+}

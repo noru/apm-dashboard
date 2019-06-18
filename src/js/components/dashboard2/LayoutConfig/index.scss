@@ -1,0 +1,119 @@
+@import '../../../../css/variables.scss';
+
+.layout-config-modal {
+
+  color: white;
+  top: 10%;
+  font-family: inherit;
+
+  .ant-modal-body {
+    font-size: 1rem;
+  }
+
+  .ant-modal-content {
+    background-color: $modalBgColor;
+    padding: 0 3em;
+  }
+
+  .config-modal-content {
+    width: 100%;
+
+    h2 {
+      color: white;
+      text-align: center;
+    }
+
+    .fake-monitor {
+      padding: .5em .5em 0;
+      border: .5em solid black;
+      border-radius: .5em;
+      border-bottom: 1.4em solid black;
+      position: relative;
+      margin: 0em 1em 3em;
+      padding: 1em;
+      background: url(~assets/img/dashboard2-bg.png);
+      background-size: cover;
+
+      &:after {
+        content: '';
+        border: 6px solid silver;
+        border-radius: 861112px;
+        bottom: -14px;
+        right: calc(50% - 6px);
+        position: absolute;
+      }
+
+      &:before {
+        content: '';
+        height: 4rem;
+        width: 35rem;
+        position: absolute;
+        bottom: -5rem;
+        right: 50%;
+        transform: translateX(50%);
+        border-top: 8px solid black;
+        border-radius: 50%;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+      }
+
+      .header-area {
+        padding: .2em;
+        margin-bottom: .5em;
+        border: 1px dotted gray;
+        position: relative;
+        text-align: center;
+
+        .flyby-text-input {
+          position: relative;
+          width: 20rem;
+          font-size: 1rem;
+          font-family: inherit;
+          text-align: center;
+          background-color: transparent;
+          border: 1px solid gray;
+          color: white;
+        }
+
+        a {
+          position: absolute;
+          right: 1em;
+
+          .fa {
+            font-size: 1em;
+            vertical-align: initial;
+          }
+        }
+      }
+      .dashboard-layout {
+        height: 32vh;
+      }
+    }
+
+    .component-card {
+      border: 1px solid gray;
+      padding: 1.3rem 1rem;
+      margin-bottom: .5rem !important;
+      background-color: transparent;
+      cursor: move;
+      text-align: center;
+    }
+
+    .backup-cards {
+      margin-top: 1em;
+      border: 1px dashed gray;
+      min-height: 80%;
+      padding: .5em .5em 2em;
+      .component-card {
+        padding: .5em 0;
+        font-size: .8em;
+      }
+
+    }
+  }
+
+  .ant-modal-footer {
+    border-top: none;
+  }
+
+}
