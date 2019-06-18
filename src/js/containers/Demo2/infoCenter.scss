@@ -11,7 +11,7 @@
 
   .message-wrapper {
     padding: 1em 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
 
     .message-tile {
       padding-bottom: 1em;
@@ -29,25 +29,4 @@
     vertical-align: middle;
   }
 
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .info-center {
-    padding: 1em 0 .5em;
-    .message-wrapper {
-      padding: 1em 0;
-      font-size: 1.5rem;
-    }
-  }
-}
-@media (max-width: 1600px) {
-  .info-center {
-    .message-wrapper {
-      padding: .5em 0;
-      font-size: 1rem;
-      .message-tile {
-        padding-bottom: .5em;
-      }
-    }
-  }
 }

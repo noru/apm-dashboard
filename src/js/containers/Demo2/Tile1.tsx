@@ -5,7 +5,7 @@ import moment from 'moment'
 import './tile1.scss'
 
 function getBars(): any[] {
-  let bars = new Array
+  let bars = new Array()
   let now = moment().minute(0)
   for (let i = 0; i < 20; i++) {
     bars.unshift({
@@ -17,20 +17,19 @@ function getBars(): any[] {
 }
 
 interface Props {
-  title: string,
-  initNumber: number,
-  precent: number,
-  stepRange: [number, number],
-  interval: [number, number],
+  title: string
+  initNumber: number
+  precent: number
+  stepRange: [number, number]
+  interval: [number, number]
 }
 interface State {
-  bars: any[],
-  delta: number,
-  percent: number,
+  bars: any[]
+  delta: number
+  percent: number
 }
 const NumberFormatter = Intl.NumberFormat()
 export default class Tile1 extends React.Component<Props, State> {
-
   state = {
     delta: 0,
     bars: getBars(),
@@ -67,7 +66,6 @@ export default class Tile1 extends React.Component<Props, State> {
   }
 
   render() {
-
     let { title, initNumber } = this.props
     let { delta, bars, percent } = this.state
     let num = initNumber + delta
@@ -87,28 +85,25 @@ export default class Tile1 extends React.Component<Props, State> {
             <span>元</span>
           </span>
           <span className="precent level-right">
-            <span className={percent > 0 ? 'up' : 'down'}></span>
+            <span className={percent > 0 ? 'up' : 'down'} />
             <span>{(Math.abs(percent) * 10).toFixed(1)}</span>
             <span>%</span>
           </span>
           <span className="description">与昨日同期相比</span>
         </div>
-        <FakeBars key={title} bars={bars}/>
+        <FakeBars key={title} bars={bars} />
       </div>
     )
   }
 }
 
-const FakeBars = ({ bars }: { bars: any[]}) => {
-
+const FakeBars = ({ bars }: { bars: any[] }) => {
   return (
     <div className="fake-bars">
-      { bars.map((h, i) => (
+      {bars.map((h, i) => (
         <>
-          <span key={i} className="bar" style={{ height: h.value * 10 + '%'}}>
-            { h.time.minute() === 0 &&
-              <span className="tick">{h.time.format('HH:mm')}</span>
-            }
+          <span key={i} className="bar" style={{ height: h.value * 10 + '%' }}>
+            {h.time.minute() === 0 && <span className="tick">{h.time.format('HH:mm')}</span>}
           </span>
         </>
       ))}

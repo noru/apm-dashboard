@@ -16,8 +16,8 @@
     .description {
       position: absolute;
       right: 0;
-      padding-bottom: 1em;
-      font-size: .6em;
+      padding-bottom: 3em;
+      font-size: .8em;
     }
   }
 
@@ -25,7 +25,7 @@
     padding-top: 2em;
     align-items: baseline;
     span:first-of-type {
-      font-size: 4rem;
+      font-size: 1.5rem;
     }
     span:last-of-type {
       margin-left: 3px;
@@ -34,14 +34,14 @@
   }
 
   .precent {
-    font-size: 3rem;
-    padding-top: 2rem;
+    font-size: 1.7rem;
+    padding-top: 1.5rem;
     color: #44d2d6;
 
     .down::before,
     .up::before {
       content: '▴';
-      font-size: 1.8em;
+      font-size: 1em;
 
     }
 
@@ -84,48 +84,4 @@
     }
   }
 
-}
-
-@media (min-width: 4000px) {
-  .tile1 {
-    .main-number {
-      span:first-of-type {
-        font-size: 3rem;
-      }
-    }
-    .precent {
-      font-size: 2rem;
-    }
-    .level {
-      padding-right: 6rem;
-      .description {
-        font-size: 1.5rem;
-        padding-bottom: 4rem;
-        padding-right: 6rem;
-      }
-    }
-    .fake-bars {
-      .tick {
-        font-size: 1.5rem;
-        &::before {
-          left: 70%;
-          height: .5em;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1600px) {
-  .tile1 {
-    .main-number {
-      span:first-of-type {
-        font-size: 1.5rem;
-      }
-    }
-    .precent {
-      font-size: 1rem;
-    }
-
-  }
 }

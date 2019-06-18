@@ -3,10 +3,10 @@
   background-size: cover;
   min-height: 100vh;
   color: white;
-
+  padding-top: 30px;
   .demo-header {
     padding: 1em 2em;
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .fake-tab {
@@ -26,7 +26,7 @@
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .row1 {
@@ -34,7 +34,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .row2 {
@@ -42,7 +42,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding: 2em 3.4rem;
+    padding: 1em 2em;
 
     .devices {
       border-top: 1px solid #666;
@@ -59,26 +59,4 @@
     }
   }
 
-}
-@media (min-aspect-ratio: 16/9) {
-  .demo {
-    h1 {
-      font-size: 1.3rem;
-    }
-  }
-}
-@media (max-width: 1600px) {
-  .demo {
-    .demo-header {
-      padding: 1em 2em;
-      font-size: 1rem;
-      margin-bottom: 0;
-    }
-    h1 {
-      font-size: 1rem;
-    }
-    .row2 {
-      padding: 0 1em;
-    }
-  }
 }

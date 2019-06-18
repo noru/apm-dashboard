@@ -22,7 +22,7 @@
       align-self: flex-end;
       margin-bottom: 1.2em;
       position: relative;
-      font-size: 2rem;
+      font-size: 1rem;
 
       &.right,
       &.left {
@@ -35,7 +35,7 @@
 
       &.centered-text {
         position: absolute;
-        font-size: 4rem;
+        font-size: 1.4rem;
         left: 50%;
         transform: translate(-50%, -30%);
         span {
@@ -50,72 +50,13 @@
 
   .tile3-row {
     flex: 1;
-    font-size: 3rem;
+    font-size: 1.5rem;
     .demo-row .row-item p:first-of-type {
-      font-size: 3rem;
+      font-size: 1.5rem;
     }
     .demo-row .row-item p {
-      font-size: 2rem;
-    }
-  }
-
-}
-@media (min-aspect-ratio: 16/9) {
-  .tile3 {
-
-    .tile3-chart {
-      span {
-        font-size: 1.5rem;
-        &.centered-text {
-          font-size: 3rem;
-        }
-        &.right,
-        &.left {
-          min-width: 10%;
-        }
-      }
-
-    }
-    .tile3-row {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-size: 2rem;
-      .demo-row .row-item p:first-of-type {
-        font-size: 2rem;
-      }
-      .demo-row .row-item p {
-        font-size: 1.5rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 1600px) {
-  .tile3 {
-    .tile3-chart {
-      span {
-        font-size: 1rem;
-        &.centered-text {
-          font-size: 1.5rem;
-          span {
-            font-size: 1rem;
-          }
-        }
-      }
-
-    }
-    .tile3-row {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       font-size: 1rem;
-      .demo-row .row-item p:first-of-type {
-        font-size: 1.1rem;
-      }
-      .demo-row .row-item p {
-        font-size: .9rem;
-      }
     }
   }
+
 }

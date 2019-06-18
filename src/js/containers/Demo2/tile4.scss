@@ -24,11 +24,11 @@
       .centered-text {
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 40%;
         transform: translate(-50%, -50%);
-        font-size: 1.5em;
+        font-size: 1em;
         p:first-of-type {
-          font-size: 2em;
+          font-size: 1.5em;
         }
       }
     }
@@ -41,7 +41,7 @@
           border-bottom: 1px solid #666666;
         }
         p {
-          font-size: 2em;
+          font-size: 1.5em;
         }
         span {
           margin-left: 10px;
@@ -50,28 +50,6 @@
           font-size: 1em;
         }
       }
-    }
-  }
-}
-
-@media (min-aspect-ratio: 16/9) {
-
-}
-
-@media (max-width: 1600px) {
-  .tile4 {
-    .tile4-content {
-      .tile4-chart {
-        .centered-text {
-          font-size: 1em;
-          p:first-of-type {
-            font-size: 1.5em;
-          }
-        }
-      }
-    }
-    .tile4-col {
-      font-size: .5em;
     }
   }
 }
